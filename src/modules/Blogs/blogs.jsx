@@ -1,6 +1,7 @@
 'use client'
 
 import Cards from "../shared/cards.jsx";
+import Link from "next/link";
 
 const Blogs = () => {
   const Card = [
@@ -39,20 +40,24 @@ const Blogs = () => {
       <div className="mt-12 mb-20 md:mt-34 text-center text-black">
         <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
           {Card.map((Card) => (
+            <Link href='/blog'>
               <Cards
                 img={Card.img}
                 heading={Card.heading}
                 button={Card.button}
               />
+              </Link>
           ))}
         </div>
         <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
           {Card.map((Card) => (
+              <Link href='/blog'>
               <Cards
                 img={Card.img}
                 heading={Card.heading}
                 button={Card.button}
               />
+              </Link>
           ))}
         </div>
       </div>

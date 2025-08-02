@@ -13,11 +13,11 @@ import { FiMenu, FiX } from 'react-icons/fi'
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6">
-        <li><Link href="#">Home</Link></li>
-        <li><Link href="#">Events</Link></li>
-        <li><Link href="#">Resources</Link></li>
-        <li><Link href="#">About Us</Link></li>
-        <li><Link href="#">Contact Us</Link></li>
+        <li className='hover:text-blue-600'><Link href="/">Home</Link></li>
+        <li className='hover:text-blue-600'><Link href="/upcomingevent">Events</Link></li>
+        <li className='hover:text-blue-600'><Link href="/blogs">Resources</Link></li>
+        <li className='hover:text-blue-600'><Link href="/aboutus">About Us</Link></li>
+        <li className='hover:text-blue-600'><Link href="/contactus">Contact Us</Link></li>
       </ul>
 
       {/* Hamburger Icon */}
@@ -42,11 +42,11 @@ import { FiMenu, FiX } from 'react-icons/fi'
         `}
       >
         <ul>
-          <li className='py-3'><Link href="/home" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li className='py-3'><Link href="/home" onClick={() => setMenuOpen(false)}>Events</Link></li>
-          <li className='py-3'><Link href="/home" onClick={() => setMenuOpen(false)}>Resources</Link></li>
-          <li className='py-3'><Link href="/home" onClick={() => setMenuOpen(false)}>About Us</Link></li>
-          <li className='py-3'><Link href="/home" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+          <li className='py-3 hover:text-blue-600'><Link href="/home" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li className='py-3 hover:text-blue-600'><Link href="/upcomingevent" onClick={() => setMenuOpen(false)}>Events</Link></li>
+          <li className='py-3 hover:text-blue-600'><Link href="/blogs" onClick={() => setMenuOpen(false)}>Resources</Link></li>
+          <li className='py-3 hover:text-blue-600'><Link href="/aboutus" onClick={() => setMenuOpen(false)}>About Us</Link></li>
+          <li className='py-3 hover:text-blue-600'><Link href="/contactus" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
         </ul>
       </div>
     </nav>

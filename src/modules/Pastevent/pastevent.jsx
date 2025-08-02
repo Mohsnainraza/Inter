@@ -2,6 +2,7 @@
 
 import { MdSearch } from "react-icons/md";
 import Card from "../shared/card.jsx";
+import Link from "next/link";
 
 const Pastevent = () => {
   const btns = [
@@ -83,6 +84,7 @@ const Pastevent = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
           {events.map((event) => (
+            <Link href='/events'>
               <Card
                 img={event.img}
                 heading={event.heading}
@@ -90,10 +92,12 @@ const Pastevent = () => {
                 date={event.date}
                 type={event.type}
               />
+              </Link>
           ))}
         </div>
         <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
           {events.map((event) => (
+            <Link href='/events'>
               <Card
                 img={event.img}
                 heading={event.heading}
@@ -101,6 +105,7 @@ const Pastevent = () => {
                 date={event.date}
                 type={event.type}
               />
+              </Link>
           ))}
         </div>
       </div>

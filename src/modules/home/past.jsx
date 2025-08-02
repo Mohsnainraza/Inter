@@ -59,6 +59,7 @@ const Past = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
         {events.map((event) => (
+          <Link href='/events'>
           <Card
             img={event.img}
             heading={event.heading}
@@ -66,11 +67,12 @@ const Past = () => {
             date={event.date}
             type={event.type}
           />
+          </Link>
         ))}
       </div>
       <div className="flex justify-center">
         <button className="text-[#1877F2] border border-b-1 w-[406px] py-2 font-semibold rounded-md cursor-pointer">
-           <Link href="/home">View All Past Events</Link>
+           <Link href="/pastevent">View All Past Events</Link>
         </button>
       </div>
       </div>

@@ -61,6 +61,7 @@ console.log(events)
       </div>
       <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
         {events.map((event) => (
+          <Link href='/events'>
           <Card
             img={event.img}
             heading={event.heading}
@@ -68,11 +69,12 @@ console.log(events)
             date={event.date}
             type={event.type}
           />
+          </Link>
         ))}
       </div>
       <div className="flex justify-center">
         <button className="text-[#1877F2] border border-b-1 w-[406px] py-2 font-semibold rounded-md cursor-pointer">
-          <Link href="/home">View All Upcoming Events</Link>
+          <Link href="/upcomingevent">View All Upcoming Events</Link>
         </button>
       </div>
     </div>

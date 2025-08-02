@@ -32,12 +32,12 @@ const Recommended=()=> {
       <div className="flex flex-wrap justify-center gap-8 mt-[3rem]">
         
         {Card.map((Card) => (
-        //   <Link herf= "/home">
+          <Link href= "/blog">
           <Cards
             img={Card.img}
             heading={Card.heading}
           />
-        //   </Link>
+        </Link>
         ))}
       </div>
       <div className="flex justify-center">
